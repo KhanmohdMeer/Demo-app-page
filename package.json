@@ -1,0 +1,8 @@
+{
+  "name": "demoapp",
+  "version": "1.0.0",
+  "description": "My first static demo app",
+  "scripts": {
+    "build": "echo 'Static site - no build needed'"
+  }
+}
