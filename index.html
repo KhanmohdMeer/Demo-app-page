@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Everyone, Welcome To My First Demoapp</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            min-height: 100vh;
+            min-width: 100vw;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            /* Fallback blue color if image fails */
+            background: #0b1e3f;
+        }
+        .bg-image {
+            position: fixed;
+            top: 0; left: 0; 
+            width: 100vw; height: 100vh;
+            object-fit: cover;
+            z-index: 0;
+        }
+        .header {
+            position: absolute;
+            top: 20px;
+            left: 30px;
+            color: #fff;
+            font-size: 2.2rem;
+            font-weight: bold;
+            z-index: 2;
+            letter-spacing: 2px;
+            text-shadow: 1px 1px 6px #1862a1;
+        }
+        .center-title {
+            position: absolute;
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2rem;
+            color: #111;
+            background: rgba(255,255,255, 0.75);
+            padding: 20px 40px;
+            border-radius: 16px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            z-index: 2;
+            box-shadow: 0 4px 24px 0 rgba(0,0,0,0.10);
+        }
+        @media (max-width: 600px) {
+            .header { font-size: 1.2rem; top: 10px; left: 10px; }
+            .center-title { font-size: 1rem; padding: 10px 12px;}
+        }
+    </style>
+</head>
+<body>
+    <img src="5504804.jpg" class="bg-image" alt="background-image">
+    <div class="header">Hello Everyone</div>
+    <div class="center-title">Welcome to my First demoapp</div>
+</body>
+</html>
